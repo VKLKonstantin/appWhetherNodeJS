@@ -1,11 +1,22 @@
 {
-  "name": "node_wheather",
+  "name": "node_wheather_my",
   "version": "1.0.0",
-  "description": "wheather",
-  "main": "index.js",
+  "description": "weather",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Konstantin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "chalk": "^5.0.0",
+    "dedent": "^0.7.0",
+    "dedent-js": "^1.0.1",
+    "eslint": "^7.11.0"
+  }
 }
